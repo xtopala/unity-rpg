@@ -26,6 +26,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e10ad74309d362f4181f22fcd8d9f0d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6556542560907951523
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8754502917370013199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e73fc8c5a835826418474a5ffec18234, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chaseDistance: 5
+  suspicionTime: 5
 --- !u!1001 &210456236210540411
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91,6 +105,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 148192562, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
+      propertyPath: m_Speed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 384967169204569182, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
       propertyPath: m_Name
       value: Enemy
