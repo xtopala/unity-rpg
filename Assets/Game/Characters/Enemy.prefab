@@ -1,32 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!136 &6018011493390235277
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8754502917370013199}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
---- !u!114 &2416221532496965716
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8754502917370013199}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e10ad74309d362f4181f22fcd8d9f0d2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6556542560907951523
+--- !u!114 &3441013638846915555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,8 +13,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chaseDistance: 5
-  suspicionTime: 5
---- !u!1001 &210456236210540411
+  suspicionTime: 3
+  waypointDwelTime: 3
+  waypointTollerance: 1
+  patrolPath: {fileID: 0}
+--- !u!1001 &2151187632242401794
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -95,8 +72,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 9505156, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
 --- !u!1001 &8946844436534764113
 PrefabInstance:
@@ -112,6 +88,10 @@ PrefabInstance:
     - target: {fileID: 384967169204569182, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697221465413001891, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
+      propertyPath: weaponDamage
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6446853514777594562, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
       propertyPath: m_RootOrder
@@ -158,14 +138,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6976776492111914958, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
-      propertyPath: health
-      value: 20
-      objectReference: {fileID: 0}
-    - target: {fileID: 6976776492111914958, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
       propertyPath: healthPoints
-      value: 20
+      value: 40
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 389032298047439654, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
 --- !u!1 &8754502917370013199 stripped
 GameObject:
