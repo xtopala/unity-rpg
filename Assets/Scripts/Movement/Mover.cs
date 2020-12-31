@@ -1,5 +1,6 @@
 ﻿using RPG.Core;
 using RPG.Saving;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -11,6 +12,13 @@ namespace RPG.Movement
 
         NavMeshAgent navMeshAgent;
         Health health;
+
+        [System.Serializable]
+        struct MoverSaveData
+        {
+            public SerializableVector3 position;
+            public SerializableVector3 rotation;
+        }
 
         private void Start()
         {
@@ -53,14 +61,26 @@ namespace RPG.Movement
 
         public object CaptureState()
         {
-            return new SerializableVector3(transform.position);
+            //Dictionary<string, object> data = new Dictionary<string, object>
+            //{
+            //    ["position"] = new SerializableVector3(transform.position),
+            //    ["rotation"] = new SerializableVector3(transform.eulerAngles)
+            //};
+            MoverSaveData data = new MoverSaveData
+            {
+                position = new SerializableVector3(transform.position),
+                rotation = new SerializableVector3(transform.eulerAngles),
+            };
+
+            return data;
         }
 
         public void RestoreState(object state)
         {
-            SerializableVector3 position = (SerializableVector3)state;
+            MoverSaveData data = (MoverSaveData)state;
             GetComponent<NavMeshAgent>().enabled = false;
-            transform.position = position.ToVector();
+            transform.position = data.position.ToVector();
+            transform.eulerAngles = data.rotation.ToVector();
             GetComponent<NavMeshAgent>().enabled = true;
         }
     }
