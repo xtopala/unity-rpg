@@ -6,19 +6,19 @@ using UnityEngine.AI;
 
 namespace RPG.Movement
 {
-    public class Mover : MonoBehaviour, IAction, ISaveable
+    public class Mover : MonoBehaviour, IAction
     {
         [SerializeField] float maxSpeed = 6f;
 
         NavMeshAgent navMeshAgent;
         Health health;
 
-        [System.Serializable]
-        struct MoverSaveData
-        {
-            public SerializableVector3 position;
-            public SerializableVector3 rotation;
-        }
+        //[System.Serializable]
+        //struct MoverSaveData
+        //{
+        //    public SerializableVector3 position;
+        //    public SerializableVector3 rotation;
+        //}
 
         private void Start()
         {
@@ -59,28 +59,28 @@ namespace RPG.Movement
             navMeshAgent.isStopped = true;
         }
 
-        public object CaptureState()
+        public void CaptureState()
         {
             //Dictionary<string, object> data = new Dictionary<string, object>
             //{
             //    ["position"] = new SerializableVector3(transform.position),
             //    ["rotation"] = new SerializableVector3(transform.eulerAngles)
             //};
-            MoverSaveData data = new MoverSaveData
-            {
-                position = new SerializableVector3(transform.position),
-                rotation = new SerializableVector3(transform.eulerAngles),
-            };
+            //MoverSaveData data = new MoverSaveData
+            //{
+            //    position = new SerializableVector3(transform.position),
+            //    rotation = new SerializableVector3(transform.eulerAngles),
+            //};
 
-            return data;
+            //return data;
         }
 
         public void RestoreState(object state)
         {
-            MoverSaveData data = (MoverSaveData)state;
+            //MoverSaveData data = (MoverSaveData)state;
             GetComponent<NavMeshAgent>().enabled = false;
-            transform.position = data.position.ToVector();
-            transform.eulerAngles = data.rotation.ToVector();
+           // transform.position = data.position.ToVector();
+           // transform.eulerAngles = data.rotation.ToVector();
             GetComponent<NavMeshAgent>().enabled = true;
         }
     }
