@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace RPG.Core
 {
-    public class Health : MonoBehaviour
+    public class Health : MonoBehaviour, ISaveable
     {
         [SerializeField] float healthPoints = 100f;
 
@@ -40,7 +40,7 @@ namespace RPG.Core
         public void RestoreState(object state)
         {
             healthPoints = (float)state;
-            if (healthPoints == 0)
+            if (healthPoints <= 0)
             {
                 Die();
             }

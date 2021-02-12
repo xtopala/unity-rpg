@@ -75,6 +75,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+--- !u!4 &2151187632242265070 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 403948, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+  m_PrefabInstance: {fileID: 2151187632242401794}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2151187632242207622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 461188, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+  m_PrefabInstance: {fileID: 2151187632242401794}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8946844436534764113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -91,9 +101,29 @@ PrefabInstance:
       value: Enemy
       objectReference: {fileID: 0}
     - target: {fileID: 5697221465413001891, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d0885469c877c44ebc8bbb5a6c5b7cb, type: 2}
+    - target: {fileID: 5697221465413001891, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 5697221465413001891, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d0885469c877c44ebc8bbb5a6c5b7cb, type: 2}
+    - target: {fileID: 5697221465413001891, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 2151187632242207622}
+    - target: {fileID: 5697221465413001891, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
+      propertyPath: leftHandTransform
+      value: 
+      objectReference: {fileID: 2151187632242265070}
+    - target: {fileID: 5697221465413001891, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
+      propertyPath: rightHandTransform
+      value: 
+      objectReference: {fileID: 2151187632242207622}
     - target: {fileID: 6446853514777594562, guid: 16c858d7397199b4babf5de4f49005d6, type: 3}
       propertyPath: m_RootOrder
       value: 0
