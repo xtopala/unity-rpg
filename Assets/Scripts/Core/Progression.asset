@@ -9,12 +9,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df6b332273e93a14b9fbf475a1dfcaa2, type: 3}
-  m_Name: Unarmed
+  m_Script: {fileID: 11500000, guid: 4b3781f40a1220940889d894cf0bccd7, type: 3}
+  m_Name: Progression
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 0}
-  equipedPrefab: {fileID: 0}
-  weaponDamage: 3
-  weaponRange: 2
-  isRightHanded: 1
-  projectile: {fileID: 0}
+  characterClasses:
+  - characterClass: 0
+    health:
+    - 50
+    - 100
+    - 200
+    - 400
+    - 700
+  - characterClass: 1
+    health:
+    - 40
+  - characterClass: 0
+    health: []
