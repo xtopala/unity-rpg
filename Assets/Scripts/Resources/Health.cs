@@ -21,13 +21,19 @@ namespace RPG.Resources
             return isDead;
         }
 
-        public void TakeDamage(float damage)
+        public void TakeDamage(GameObject instigator, float damage)
         {
             healthPoints = Mathf.Max(healthPoints - damage, 0);
             if (healthPoints == 0)
             {
                 Die();
+                AwardExperience(instigator);
             }
+        }
+
+        public float GetPercentage()
+        {
+            return 100 * (healthPoints / GetComponent<BaseStats>().GetHealth());
         }
 
         private void Die()
@@ -37,6 +43,14 @@ namespace RPG.Resources
             isDead = true;
             GetComponent<Animator>().SetTrigger("die");
             GetComponent<ActionScheduler>().CancelCurrentAction();
+        }
+
+        private void AwardExperience(GameObject instigator)
+        {
+            Expirience expirience = instigator.GetComponent<Expirience>();
+            if (expirience == null) return;
+
+            expirience.GainExpirience(GetComponent<BaseStats>().GetExpirienceReward());
         }
 
         public object CaptureState()
