@@ -1,5 +1,5 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using System.Collections.Generic;
 
 namespace RPG.Stats
 {
@@ -41,6 +41,7 @@ namespace RPG.Stats
             foreach (ProgressionCharacterClass progressionClass in characterClasses)
             {
                 var statLookupTable = new Dictionary<Stat, float[]>();
+
                 foreach (ProgressionStat progressionStat in progressionClass.stats)
                 {
                     statLookupTable[progressionStat.stat] = progressionStat.levels;
@@ -55,7 +56,6 @@ namespace RPG.Stats
         {
             public CharacterClass characterClass;
             public ProgressionStat[] stats;
-            //public float[] health;
         }
 
         [System.Serializable]
@@ -64,6 +64,5 @@ namespace RPG.Stats
             public Stat stat;
             public float[] levels;
         }
-
     }
 }
