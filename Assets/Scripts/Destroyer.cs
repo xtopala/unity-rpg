@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 
-public class Destroyer : MonoBehaviour
+namespace RPG
 {
-    [SerializeField] GameObject targetToDestroy = null;
-
-    public void DestroyTarget()
+    public class Destroyer : MonoBehaviour
     {
-        Destroy(targetToDestroy);
+        [SerializeField] GameObject targetToDestroy = null;
+
+        public void DestroyTarget()
+        {
+            Destroy(targetToDestroy);
+        }
     }
 }
