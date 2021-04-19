@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b3781f40a1220940889d894cf0bccd7, type: 3}
+  m_Script: {fileID: 11500000, guid: 2752f5bd6a41aea4db627c0bf9bb3a0c, type: 3}
   m_Name: Progression
   m_EditorClassIdentifier: 
   characterClasses:
@@ -58,23 +58,23 @@ MonoBehaviour:
     - stat: 2
       levels:
       - 2000
-      - 4000
       - 6000
-      - 8000
-      - 10000
       - 12000
-      - 14000
-      - 16000
-      - 18000
       - 20000
-      - 22000
-      - 24000
-      - 26000
-      - 28000
       - 30000
-      - 32000
-      - 34000
-      - 36000
+      - 42000
+      - 56000
+      - 72000
+      - 90000
+      - 110000
+      - 132000
+      - 156000
+      - 182000
+      - 210000
+      - 240000
+      - 272000
+      - 306000
+      - 342000
   - characterClass: 1
     stats:
     - stat: 0
@@ -137,7 +137,7 @@ MonoBehaviour:
       - 680
       - 720
       - 760
-  - characterClass: 2
+  - characterClass: 3
     stats:
     - stat: 0
       levels:

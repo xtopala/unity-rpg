@@ -1,9 +1,10 @@
-﻿using RPG.Movement;
+using RPG.Combat;
+using RPG.Movement;
+using UnityEngine;
 using RPG.Attributes;
 using System;
-using UnityEngine;
-using UnityEngine.AI;
 using UnityEngine.EventSystems;
+using UnityEngine.AI;
 
 namespace RPG.Control
 {
@@ -11,7 +12,7 @@ namespace RPG.Control
     {
         Health health;
 
-        [Serializable]
+        [System.Serializable]
         struct CursorMapping
         {
             public CursorType type;
@@ -23,15 +24,14 @@ namespace RPG.Control
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
         [SerializeField] float maxNavPathLength = 40f;
 
-        private void Awake()
-        {
+        private void Awake() {
             health = GetComponent<Health>();
         }
 
         private void Update()
         {
             if (InteractWithUI()) return;
-            if (health.IsDead())
+            if (health.IsDead()) 
             {
                 SetCursor(CursorType.None);
                 return;
@@ -41,6 +41,16 @@ namespace RPG.Control
             if (InteractWithMovement()) return;
 
             SetCursor(CursorType.None);
+        }
+
+        private bool InteractWithUI()
+        {
+            if (EventSystem.current.IsPointerOverGameObject())
+            {
+                SetCursor(CursorType.UI);
+                return true;
+            }
+            return false;
         }
 
         private bool InteractWithComponent()
@@ -75,7 +85,8 @@ namespace RPG.Control
 
         private bool InteractWithMovement()
         {
-            bool hasHit = RaycastNavMesh(out Vector3 target);
+            Vector3 target;
+            bool hasHit = RaycastNavMesh(out target);
             if (hasHit)
             {
                 if (Input.GetMouseButton(0))
@@ -88,29 +99,17 @@ namespace RPG.Control
             return false;
         }
 
-        private bool InteractWithUI()
-        {
-            if (EventSystem.current.IsPointerOverGameObject())
-            {
-                SetCursor(CursorType.UI);
-                return true;
-            }
-            return false;
-        }
-
         private bool RaycastNavMesh(out Vector3 target)
         {
             target = new Vector3();
 
-            bool hasHit = Physics.Raycast(GetMouseRay(), out RaycastHit hit);
+            RaycastHit hit;
+            bool hasHit = Physics.Raycast(GetMouseRay(), out hit);
             if (!hasHit) return false;
 
+            NavMeshHit navMeshHit;
             bool hasCastToNavMesh = NavMesh.SamplePosition(
-                hit.point,
-                out NavMeshHit navMeshHit,
-                maxNavMeshProjectionDistance,
-                NavMesh.AllAreas
-                );
+                hit.point, out navMeshHit, maxNavMeshProjectionDistance, NavMesh.AllAreas);
             if (!hasCastToNavMesh) return false;
 
             target = navMeshHit.position;
@@ -146,7 +145,10 @@ namespace RPG.Control
         {
             foreach (CursorMapping mapping in cursorMappings)
             {
-                if (mapping.type == type) { return mapping; }
+                if (mapping.type == type)
+                {
+                    return mapping;
+                }
             }
             return cursorMappings[0];
         }

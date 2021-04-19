@@ -1,4 +1,4 @@
-﻿namespace RPG.Control
+namespace RPG.Control
 {
     public enum CursorType
     {
@@ -6,6 +6,6 @@
         Movement,
         Combat,
         UI,
-        Pickup
+        Pickup,
     }
 }

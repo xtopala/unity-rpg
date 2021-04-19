@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df6b332273e93a14b9fbf475a1dfcaa2, type: 3}
+  m_Script: {fileID: 11500000, guid: f2591c982fc81e940845bedeabeb30af, type: 3}
   m_Name: Fireball
   m_EditorClassIdentifier: 
-  animatorOverride: {fileID: 22100000, guid: 99ae656bab450254cad766ee1e69857b, type: 2}
-  equipedPrefab: {fileID: 0}
+  animatorOverride: {fileID: 0}
+  equippedPrefab: {fileID: 0}
   weaponDamage: 0
   percentageBonus: 25
   weaponRange: 20
   isRightHanded: 0
-  projectile: {fileID: 4249870812122566454, guid: 0929b4cdec919bf42b329d812636b430, type: 3}
+  projectile: {fileID: 4363093564197430368, guid: fcff971cc6939004ca7e345f8d0db844,
+    type: 3}

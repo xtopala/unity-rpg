@@ -1,5 +1,7 @@
-﻿using RPG.Control;
+using System;
 using System.Collections;
+using RPG.Control;
+using RPG.Saving;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -20,9 +22,8 @@ namespace RPG.SceneManagement
         [SerializeField] float fadeInTime = 2f;
         [SerializeField] float fadeWaitTime = 0.5f;
 
-        private void OnTriggerEnter(Collider other)
-        {
-            if (other.CompareTag("Player"))
+        private void OnTriggerEnter(Collider other) {
+            if (other.tag == "Player")
             {
                 StartCoroutine(Transition());
             }
@@ -42,18 +43,18 @@ namespace RPG.SceneManagement
             SavingWrapper savingWrapper = FindObjectOfType<SavingWrapper>();
             PlayerController playerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
             playerController.enabled = false;
-
+            
             yield return fader.FadeOut(fadeOutTime);
 
             savingWrapper.Save();
 
             yield return SceneManager.LoadSceneAsync(sceneToLoad);
-
             PlayerController newPlayerController = GameObject.FindWithTag("Player").GetComponent<PlayerController>();
             newPlayerController.enabled = false;
 
-            savingWrapper.Load();
 
+            savingWrapper.Load();
+            
             Portal otherPortal = GetOtherPortal();
             UpdatePlayer(otherPortal);
 
@@ -69,8 +70,10 @@ namespace RPG.SceneManagement
         private void UpdatePlayer(Portal otherPortal)
         {
             GameObject player = GameObject.FindWithTag("Player");
-            player.GetComponent<NavMeshAgent>().Warp(otherPortal.spawnPoint.position);
+            player.GetComponent<NavMeshAgent>().enabled = false;
+            player.transform.position = otherPortal.spawnPoint.position;
             player.transform.rotation = otherPortal.spawnPoint.rotation;
+            player.GetComponent<NavMeshAgent>().enabled = true;
         }
 
         private Portal GetOtherPortal()

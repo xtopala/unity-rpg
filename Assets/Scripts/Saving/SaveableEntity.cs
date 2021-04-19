@@ -1,7 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using RPG.Core;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace RPG.Saving
 {
@@ -32,7 +34,7 @@ namespace RPG.Saving
             foreach (ISaveable saveable in GetComponents<ISaveable>())
             {
                 string typeString = saveable.GetType().ToString();
-                if(stateDict.ContainsKey(typeString))
+                if (stateDict.ContainsKey(typeString))
                 {
                     saveable.RestoreState(stateDict[typeString]);
                 }
@@ -40,19 +42,16 @@ namespace RPG.Saving
         }
 
 #if UNITY_EDITOR
-        private void Update()
-        {
-            // only update in Edit mode
+        private void Update() {
             if (Application.IsPlaying(gameObject)) return;
-            // don't update when editing prefabs
             if (string.IsNullOrEmpty(gameObject.scene.path)) return;
 
             SerializedObject serializedObject = new SerializedObject(this);
             SerializedProperty property = serializedObject.FindProperty("uniqueIdentifier");
-
+            
             if (string.IsNullOrEmpty(property.stringValue) || !IsUnique(property.stringValue))
             {
-                property.stringValue = Guid.NewGuid().ToString();
+                property.stringValue = System.Guid.NewGuid().ToString();
                 serializedObject.ApplyModifiedProperties();
             }
 

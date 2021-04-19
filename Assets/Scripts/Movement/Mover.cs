@@ -1,45 +1,29 @@
 ﻿using RPG.Core;
-using RPG.Attributes;
 using RPG.Saving;
 using UnityEngine;
 using UnityEngine.AI;
+using RPG.Attributes;
 
 namespace RPG.Movement
 {
     public class Mover : MonoBehaviour, IAction, ISaveable
     {
+        [SerializeField] Transform target;
         [SerializeField] float maxSpeed = 6f;
 
         NavMeshAgent navMeshAgent;
         Health health;
 
-        [System.Serializable]
-        struct MoverSaveData
-        {
-            public SerializableVector3 position;
-            public SerializableVector3 rotation;
-        }
-
-        private void Awake()
-        {
+        private void Awake() {
             navMeshAgent = GetComponent<NavMeshAgent>();
             health = GetComponent<Health>();
         }
-
 
         void Update()
         {
             navMeshAgent.enabled = !health.IsDead();
 
             UpdateAnimator();
-        }
-
-        private void UpdateAnimator()
-        {
-            Vector3 velocity = navMeshAgent.velocity;
-            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
-            float speed = localVelocity.z;
-            GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
 
         public void StartMoveAction(Vector3 destination, float speedFraction)
@@ -60,24 +44,26 @@ namespace RPG.Movement
             navMeshAgent.isStopped = true;
         }
 
-        public void RestoreState(object state)
+        private void UpdateAnimator()
         {
-            MoverSaveData data = (MoverSaveData)state;
-            navMeshAgent.enabled = false;
-            transform.position = data.position.ToVector();
-            transform.eulerAngles = data.rotation.ToVector();
-            navMeshAgent.enabled = true;
-            GetComponent<ActionScheduler>().CancelCurrentAction();
+            Vector3 velocity = navMeshAgent.velocity;
+            Vector3 localVelocity = transform.InverseTransformDirection(velocity);
+            float speed = localVelocity.z;
+            GetComponent<Animator>().SetFloat("forwardSpeed", speed);
         }
 
         public object CaptureState()
         {
-            MoverSaveData data = new MoverSaveData
-            {
-                position = new SerializableVector3(transform.position),
-                rotation = new SerializableVector3(transform.eulerAngles),
-            };
-            return data;
+            return new SerializableVector3(transform.position);
+        }
+
+        public void RestoreState(object state)
+        {
+            SerializableVector3 position = (SerializableVector3)state;
+            navMeshAgent.enabled = false;
+            transform.position = position.ToVector();
+            navMeshAgent.enabled = true;
+            GetComponent<ActionScheduler>().CancelCurrentAction();
         }
     }
 }

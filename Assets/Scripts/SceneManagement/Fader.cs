@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using UnityEngine;
 
 namespace RPG.SceneManagement
@@ -8,8 +8,7 @@ namespace RPG.SceneManagement
         CanvasGroup canvasGroup;
         Coroutine currentActiveFade = null;
 
-        private void Awake()
-        {
+        private void Awake() {
             canvasGroup = GetComponent<CanvasGroup>();
         }
 
@@ -17,6 +16,7 @@ namespace RPG.SceneManagement
         {
             canvasGroup.alpha = 1;
         }
+
         public Coroutine FadeOut(float time)
         {
             return Fade(1, time);
@@ -36,7 +36,6 @@ namespace RPG.SceneManagement
             currentActiveFade = StartCoroutine(FadeRoutine(target, time));
             return currentActiveFade;
         }
-
 
         private IEnumerator FadeRoutine(float target, float time)
         {

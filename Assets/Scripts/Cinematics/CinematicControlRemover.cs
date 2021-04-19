@@ -1,7 +1,7 @@
-﻿using RPG.Control;
-using RPG.Core;
 using UnityEngine;
 using UnityEngine.Playables;
+using RPG.Core;
+using RPG.Control;
 
 namespace RPG.Cinematics
 {
@@ -9,19 +9,16 @@ namespace RPG.Cinematics
     {
         GameObject player;
 
-        private void Awake()
-        {
+        private void Awake() {
             player = GameObject.FindWithTag("Player");
         }
 
-        private void OnEnable()
-        {
+        private void OnEnable() {
             GetComponent<PlayableDirector>().played += DisableControl;
             GetComponent<PlayableDirector>().stopped += EnableControl;
         }
 
-        private void OnDisable()
-        {
+        private void OnDisable() {
             GetComponent<PlayableDirector>().played -= DisableControl;
             GetComponent<PlayableDirector>().stopped -= EnableControl;
         }

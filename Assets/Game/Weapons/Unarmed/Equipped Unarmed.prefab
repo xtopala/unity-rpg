@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4186435822976746013
+--- !u!1 &7944882419799141435
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1901289699483248426}
-  - component: {fileID: 2234117074260607574}
+  - component: {fileID: 2984313576964255663}
+  - component: {fileID: 442137872338528657}
   m_Layer: 0
   m_Name: Equipped Unarmed
   m_TagString: Untagged
@@ -17,38 +17,37 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1901289699483248426
+--- !u!4 &2984313576964255663
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4186435822976746013}
+  m_GameObject: {fileID: 7944882419799141435}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 5745336690854845462}
+  - {fileID: 1585368223833189509}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2234117074260607574
+--- !u!114 &442137872338528657
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4186435822976746013}
+  m_GameObject: {fileID: 7944882419799141435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: deb484739b8f9b44f84490530b4f9741, type: 3}
+  m_Script: {fileID: 11500000, guid: f3295ae5b4f657d45872a962ce974927, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   onHit:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3021229043082509691}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
+      - m_Target: {fileID: 5353271956921396127}
         m_MethodName: Play
         m_Mode: 1
         m_Arguments:
@@ -59,7 +58,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!1 &6688874385352609748
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!1 &8038837879050915460
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -67,8 +68,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5745336690854845462}
-  - component: {fileID: 3021229043082509691}
+  - component: {fileID: 1585368223833189509}
+  - component: {fileID: 5353271956921396127}
   m_Layer: 0
   m_Name: Hit Sound
   m_TagString: Untagged
@@ -76,27 +77,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5745336690854845462
+--- !u!4 &1585368223833189509
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6688874385352609748}
+  m_GameObject: {fileID: 8038837879050915460}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 1901289699483248426}
+  m_Father: {fileID: 2984313576964255663}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!82 &3021229043082509691
+--- !u!82 &5353271956921396127
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6688874385352609748}
+  m_GameObject: {fileID: 8038837879050915460}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}

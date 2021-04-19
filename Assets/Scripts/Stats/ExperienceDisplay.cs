@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+using System;
+using UnityEngine;
 using UnityEngine.UI;
 
 namespace RPG.Stats
@@ -14,7 +15,7 @@ namespace RPG.Stats
 
         private void Update()
         {
-            GetComponent<Text>().text = string.Format("{0:0}", experience.GetPoints());
+            GetComponent<Text>().text = String.Format("{0:0}", experience.GetPoints());
         }
     }
 }

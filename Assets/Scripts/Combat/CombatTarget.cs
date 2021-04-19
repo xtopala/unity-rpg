@@ -1,6 +1,6 @@
-﻿using RPG.Control;
-using RPG.Attributes;
 using UnityEngine;
+using RPG.Attributes;
+using RPG.Control;
 
 namespace RPG.Combat
 {
@@ -23,6 +23,7 @@ namespace RPG.Combat
             {
                 callingController.GetComponent<Fighter>().Attack(gameObject);
             }
+
             return true;
         }
     }

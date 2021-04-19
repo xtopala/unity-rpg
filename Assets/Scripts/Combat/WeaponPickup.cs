@@ -1,6 +1,8 @@
-﻿using RPG.Attributes;
-using RPG.Control;
+﻿using System;
 using System.Collections;
+using System.Collections.Generic;
+using RPG.Attributes;
+using RPG.Control;
 using UnityEngine;
 
 namespace RPG.Combat
@@ -10,10 +12,10 @@ namespace RPG.Combat
         [SerializeField] WeaponConfig weapon = null;
         [SerializeField] float healthToRestore = 0;
         [SerializeField] float respawnTime = 5;
-
-        private void OnTriggerEnter(Collider other)
+    
+        private void OnTriggerEnter(Collider other) 
         {
-            if (other.gameObject.CompareTag("Player"))
+            if (other.gameObject.tag == "Player")
             {
                 Pickup(other.gameObject);
             }
@@ -63,5 +65,3 @@ namespace RPG.Combat
         }
     }
 }
-
-

@@ -1,11 +1,12 @@
-﻿using GameDevTV.Utils;
-using RPG.Attributes;
-using RPG.Core;
+using UnityEngine;
 using RPG.Movement;
+using RPG.Core;
 using RPG.Saving;
+using RPG.Attributes;
 using RPG.Stats;
 using System.Collections.Generic;
-using UnityEngine;
+using GameDevTV.Utils;
+using System;
 
 namespace RPG.Combat
 {
@@ -21,8 +22,7 @@ namespace RPG.Combat
         WeaponConfig currentWeaponConfig;
         LazyValue<Weapon> currentWeapon;
 
-        private void Awake()
-        {
+        private void Awake() {
             currentWeaponConfig = defaultWeapon;
             currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
         }
@@ -32,7 +32,7 @@ namespace RPG.Combat
             return AttachWeapon(defaultWeapon);
         }
 
-        private void Start()
+        private void Start() 
         {
             currentWeapon.ForceInit();
         }
@@ -70,17 +70,16 @@ namespace RPG.Combat
         public Health GetTarget()
         {
             return target;
-        }
+        } 
 
         private void AttackBehaviour()
         {
             transform.LookAt(target.transform);
             if (timeSinceLastAttack > timeBetweenAttacks)
             {
-                // This will trigger the Hit() event
+                // This will trigger the Hit() event.
                 TriggerAttack();
                 timeSinceLastAttack = 0;
-
             }
         }
 
@@ -93,7 +92,7 @@ namespace RPG.Combat
         // Animation Event
         void Hit()
         {
-            if (target == null) return;
+            if(target == null) { return; }
 
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
 
@@ -110,7 +109,6 @@ namespace RPG.Combat
             {
                 target.TakeDamage(gameObject, damage);
             }
-
         }
 
         void Shoot()
@@ -123,17 +121,17 @@ namespace RPG.Combat
             return Vector3.Distance(transform.position, target.transform.position) < currentWeaponConfig.GetRange();
         }
 
-        public void Attack(GameObject combatTarget)
-        {
-            GetComponent<ActionScheduler>().StartAction(this);
-            target = combatTarget.GetComponent<Health>();
-        }
-
         public bool CanAttack(GameObject combatTarget)
         {
             if (combatTarget == null) { return false; }
             Health targetToTest = combatTarget.GetComponent<Health>();
             return targetToTest != null && !targetToTest.IsDead();
+        }
+
+        public void Attack(GameObject combatTarget)
+        {
+            GetComponent<ActionScheduler>().StartAction(this);
+            target = combatTarget.GetComponent<Health>();
         }
 
         public void Cancel()
@@ -173,7 +171,7 @@ namespace RPG.Combat
         public void RestoreState(object state)
         {
             string weaponName = (string)state;
-            WeaponConfig weapon = Resources.Load<WeaponConfig>(weaponName);
+            WeaponConfig weapon = UnityEngine.Resources.Load<WeaponConfig>(weaponName);
             EquipWeapon(weapon);
         }
     }

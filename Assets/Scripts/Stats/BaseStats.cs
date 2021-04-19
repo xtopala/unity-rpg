@@ -1,5 +1,7 @@
-﻿using GameDevTV.Utils;
-using System;
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using GameDevTV.Utils;
 using UnityEngine;
 
 namespace RPG.Stats
@@ -13,46 +15,44 @@ namespace RPG.Stats
         [SerializeField] GameObject levelUpParticleEffect = null;
         [SerializeField] bool shouldUseModifiers = false;
 
-        public event Action OnLevelUp;
+        public event Action onLevelUp;
 
         LazyValue<int> currentLevel;
+
         Experience experience;
 
-        private void Awake()
-        {
+        private void Awake() {
             experience = GetComponent<Experience>();
             currentLevel = new LazyValue<int>(CalculateLevel);
         }
 
-        private void Start()
+        private void Start() 
         {
             currentLevel.ForceInit();
         }
 
-        private void OnEnable()
-        {
+        private void OnEnable() {
             if (experience != null)
             {
-                experience.OnExperienceGained += UpdateLevel;
+                experience.onExperienceGained += UpdateLevel;
             }
         }
 
-        private void OnDisable()
-        {
+        private void OnDisable() {
             if (experience != null)
             {
-                experience.OnExperienceGained -= UpdateLevel;
+                experience.onExperienceGained -= UpdateLevel;
             }
         }
 
-        private void UpdateLevel()
+        private void UpdateLevel() 
         {
             int newLevel = CalculateLevel();
             if (newLevel > currentLevel.value)
             {
                 currentLevel.value = newLevel;
                 LevelUpEffect();
-                OnLevelUp();
+                onLevelUp();
             }
         }
 
@@ -63,7 +63,7 @@ namespace RPG.Stats
 
         public float GetStat(Stat stat)
         {
-            return GetBaseStat(stat) + GetAdditiveModifier(stat) * (1 + GetPercentageModifier(stat) / 100);
+            return (GetBaseStat(stat) + GetAdditiveModifier(stat)) * (1 + GetPercentageModifier(stat)/100);
         }
 
         private float GetBaseStat(Stat stat)
@@ -106,7 +106,7 @@ namespace RPG.Stats
             return total;
         }
 
-        public int CalculateLevel()
+        private int CalculateLevel()
         {
             Experience experience = GetComponent<Experience>();
             if (experience == null) return startingLevel;

@@ -1,4 +1,5 @@
-﻿using RPG.Attributes;
+using System;
+using RPG.Attributes;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -15,14 +16,13 @@ namespace RPG.Combat
 
         private void Update()
         {
-            Health health = fighter.GetTarget();
-            if (health == null)
+            if (fighter.GetTarget() == null)
             {
                 GetComponent<Text>().text = "N/A";
                 return;
             }
-
-            GetComponent<Text>().text = string.Format("{0:0}/{1:0}", health.GetHealthPoints(), health.GetMaxHealthPoints());
+            Health health = fighter.GetTarget();
+            GetComponent<Text>().text = String.Format("{0:0}/{1:0}", health.GetHealthPoints(), health.GetMaxHealthPoints());
         }
     }
 }
