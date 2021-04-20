@@ -22,7 +22,7 @@ namespace RPG.Control
 
         [SerializeField] CursorMapping[] cursorMappings = null;
         [SerializeField] float maxNavMeshProjectionDistance = 1f;
-        [SerializeField] float raycastRadius = 0.65f;
+        [SerializeField] float raycastRadius = 1f;
 
         private void Awake() {
             health = GetComponent<Health>();
@@ -115,8 +115,6 @@ namespace RPG.Control
             if (!hasCastToNavMesh) return false;
 
             target = navMeshHit.position;
-
-            
 
             return true;
         }

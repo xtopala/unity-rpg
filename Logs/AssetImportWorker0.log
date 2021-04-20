@@ -1,0 +1,570 @@
+Using pre-set license
+Built from '2020.3/staging' branch; Version is '2020.3.4f1 (0abb6314276a) revision 703331'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19042.928; Version 2009; 64bit' Language: 'en' Physical Memory: 32685 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+E:/Projects/Unity/Super Funtastical RPG
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+55198
+Successfully changed project path to: E:/Projects/Unity/Super Funtastical RPG
+E:/Projects/Unity/Super Funtastical RPG
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 37.93 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2020.3.4f1 (0abb6314276a)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path E:/Projects/Unity/Super Funtastical RPG/Assets
+GfxDevice: creating device client; threaded=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1070 Ti (ID=0x1b82)
+    Vendor:   
+    VRAM:     8079 MB
+    Driver:   27.21.14.6611
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56960
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.002009 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 35.15 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.953 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.001383 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.519 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 0.53 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1603 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 72.7 MB.
+System memory in use after: 72.8 MB.
+
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 2033.
+Total: 1.892800 ms (FindLiveObjects: 0.209600 ms CreateObjectMapping: 0.128600 ms MarkObjects: 1.490000 ms  DeleteObjects: 0.063300 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Scenes/Sandbox 2.unity
+  artifactKey: Guid(04cf4f79815149e48889b8c4b69abaa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Sandbox 2.unity using Guid(04cf4f79815149e48889b8c4b69abaa7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d1c968a684d1294d92596e94a358724') in 0.021667 seconds
+  Import took 0.024012 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000305 seconds.
+  path: Assets/Scenes/Sandbox.unity
+  artifactKey: Guid(9cb5ecae56e69f04589439155d8a1e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Sandbox.unity using Guid(9cb5ecae56e69f04589439155d8a1e1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ba9002ab79e300c5bef8de3dfe45dcb') in 0.027251 seconds
+  Import took 0.029305 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Scenes
+  artifactKey: Guid(53efec197626fd54eba9b003dcc9af17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes using Guid(53efec197626fd54eba9b003dcc9af17) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e815b3c089ba74bece8f5786e289185') in 0.023270 seconds
+  Import took 0.025231 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 36.742492 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death1.mp3
+  artifactKey: Guid(6e60ad64e34fc624ea76483921551c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death1.mp3 using Guid(6e60ad64e34fc624ea76483921551c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8054c38d01b7710e5720e937f311a2') in 0.138865 seconds
+  Import took 0.141390 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000281 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death4.mp3
+  artifactKey: Guid(1bf9ee80f2374534b80d6c5880558f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death4.mp3 using Guid(1bf9ee80f2374534b80d6c5880558f5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '248218d02bf7fc4698508dc66141b390') in 0.034115 seconds
+  Import took 0.036312 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death1.mp3
+  artifactKey: Guid(6e60ad64e34fc624ea76483921551c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death1.mp3 using Guid(6e60ad64e34fc624ea76483921551c25) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c8054c38d01b7710e5720e937f311a2') in 0.005675 seconds
+  Import took 0.007860 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death3.mp3
+  artifactKey: Guid(677a588867b19234ba2e66c09d82ba28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death3.mp3 using Guid(677a588867b19234ba2e66c09d82ba28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9d5ca0cfb96e29e3fe5785a4ffd4f8') in 0.024940 seconds
+  Import took 0.027238 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000203 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death5.mp3
+  artifactKey: Guid(0a490d2ac2e526246ab488aed902f6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death5.mp3 using Guid(0a490d2ac2e526246ab488aed902f6f1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fbb60cac73deee1f2f68a4a817f3895') in 0.022482 seconds
+  Import took 0.024945 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000244 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death2.mp3
+  artifactKey: Guid(cc33d42442263404f9c18723ddf25ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/Death/death2.mp3 using Guid(cc33d42442263404f9c18723ddf25ef7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e562effb6b63014f825665c49e27300') in 0.012758 seconds
+  Import took 0.015019 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.363945 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_AOE with laugh.ogg
+  artifactKey: Guid(be04e3f4e348d08438b4ce2e92a586d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_AOE with laugh.ogg using Guid(be04e3f4e348d08438b4ce2e92a586d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bcbbdd74bba150650b5b175382b416db') in 0.013237 seconds
+  Import took 0.016451 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000200 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 4.wav
+  artifactKey: Guid(2ebf38d5081e6024eb5214ce611bd747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 4.wav using Guid(2ebf38d5081e6024eb5214ce611bd747) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '228cd6858fbafd53f7ff97a1cb17a149') in 0.015075 seconds
+  Import took 0.017335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000261 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 4.wav
+  artifactKey: Guid(0d3d7afb5ec538343a9fd9d4235bdefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 4.wav using Guid(0d3d7afb5ec538343a9fd9d4235bdefa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f1ccf3e82072e47469cd1039234ef06') in 0.008526 seconds
+  Import took 0.010834 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000209 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_power attack grunt.wav
+  artifactKey: Guid(b58fa8783b46ccf47bce520207b2454b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_power attack grunt.wav using Guid(b58fa8783b46ccf47bce520207b2454b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46995aacc3615a2ddc14abd9d10c4f36') in 0.009311 seconds
+  Import took 0.011686 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 1.wav
+  artifactKey: Guid(94fc62564eabf2e429355affe6bee585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 1.wav using Guid(94fc62564eabf2e429355affe6bee585) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bb9ee24586fa7afc29e405b49fdf37e') in 0.007501 seconds
+  Import took 0.009613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000245 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 3.wav
+  artifactKey: Guid(ecb1846d8f5334e4098e073700dc88fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 3.wav using Guid(ecb1846d8f5334e4098e073700dc88fb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c837e70324184af2d6cb56bb3c42f5cd') in 0.008993 seconds
+  Import took 0.011534 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000269 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 8.wav
+  artifactKey: Guid(bf03f714419c3b048ad4ff8b370d10d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 8.wav using Guid(bf03f714419c3b048ad4ff8b370d10d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9eede25cc79e5c8584cb4446d81cc3f') in 0.009246 seconds
+  Import took 0.011577 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000250 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 6.wav
+  artifactKey: Guid(dc5c98755448cdd48a680d017cb8ceb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 6.wav using Guid(dc5c98755448cdd48a680d017cb8ceb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddaf5c2ffc86299df6623be1e6a688be') in 0.007611 seconds
+  Import took 0.009721 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 1.wav
+  artifactKey: Guid(c67b8f28ccb1a184cba5b958315fb75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 1.wav using Guid(c67b8f28ccb1a184cba5b958315fb75f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9d43c79d6b0755108e7ce28ff17b9fac') in 0.009586 seconds
+  Import took 0.011895 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 5.wav
+  artifactKey: Guid(e7a068fc894ced2438c719feae89ea40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 5.wav using Guid(e7a068fc894ced2438c719feae89ea40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e5411bebd1032878434ed2073514b7d') in 0.008267 seconds
+  Import took 0.010613 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 3.wav
+  artifactKey: Guid(da4f5695bff34bf4b88959334d31f55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 3.wav using Guid(da4f5695bff34bf4b88959334d31f55f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3ce269de778d609d03047c2a72f5e2f6') in 0.008262 seconds
+  Import took 0.010428 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_power hit.ogg
+  artifactKey: Guid(da0093ebe4323b846a8f67e40229df09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_power hit.ogg using Guid(da0093ebe4323b846a8f67e40229df09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fca3bfe4d0bf0a19210d3a2e3c1109c4') in 0.009006 seconds
+  Import took 0.011318 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000327 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 5.wav
+  artifactKey: Guid(8c4a6d3173c94d04c9896a4afd752f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 5.wav using Guid(8c4a6d3173c94d04c9896a4afd752f69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a51112344a87b6cb506ba6f7164ed15') in 0.008314 seconds
+  Import took 0.010491 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 10.wav
+  artifactKey: Guid(379e40c9ee994864fa1cbcd90934c6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 10.wav using Guid(379e40c9ee994864fa1cbcd90934c6a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3dacdc54674aa400bb33f3727028844') in 0.009011 seconds
+  Import took 0.011394 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000313 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 9.wav
+  artifactKey: Guid(151fa7778dc9cf14ba998127d188283b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 9.wav using Guid(151fa7778dc9cf14ba998127d188283b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'accc8830b3b427667e2d757c86b830c2') in 0.007880 seconds
+  Import took 0.010223 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000257 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 2.wav
+  artifactKey: Guid(3ab4b9bb431abca44a50195dd6f36e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 2.wav using Guid(3ab4b9bb431abca44a50195dd6f36e6b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76af64b24bb42377b28c094498f8dad2') in 0.007693 seconds
+  Import took 0.009882 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000256 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Heal spell.ogg
+  artifactKey: Guid(136a21330c4e00a4a89a64b01e15607f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Heal spell.ogg using Guid(136a21330c4e00a4a89a64b01e15607f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55eeaa7fd00c745588d2973c056d4d66') in 0.008515 seconds
+  Import took 0.010970 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 2.wav
+  artifactKey: Guid(3298d4d468badd044b2ca8930315e21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Take Damage Ouch 2.wav using Guid(3298d4d468badd044b2ca8930315e21d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faaf08e33047fd6a87bb156dddb2f6c6') in 0.007441 seconds
+  Import took 0.009706 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 7.wav
+  artifactKey: Guid(c82b5c917dd599d42aabfb3c5875da2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/SFX/SFX_Attack hit sound 7.wav using Guid(c82b5c917dd599d42aabfb3c5875da2d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4c74010bea46a194c05458f648d4b9d0') in 0.007552 seconds
+  Import took 0.009774 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001457 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.735 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.43 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1594 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 75.4 MB.
+System memory in use after: 75.6 MB.
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 2046.
+Total: 1.804700 ms (FindLiveObjects: 0.167500 ms CreateObjectMapping: 0.057700 ms MarkObjects: 1.557200 ms  DeleteObjects: 0.021500 ms)
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.588460 seconds.
+  path: Assets/Asset Packs/Pixel Cursors/Cursors/basic_01 PURPLE.png
+  artifactKey: Guid(b017dfab3916c1342b99c499d7ab500b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Pixel Cursors/Cursors/basic_01 PURPLE.png using Guid(b017dfab3916c1342b99c499d7ab500b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd6db119f1ed5481ede2a6da8197a672') in 0.043002 seconds
+  Import took 0.045698 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/Asset Packs/SimpleFX/Models/FX_PoolSplash_02.fbx
+  artifactKey: Guid(7f803617a1072ec42820168bc40edb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Models/FX_PoolSplash_02.fbx using Guid(7f803617a1072ec42820168bc40edb46) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc2e5c5955fcd6806e346f05a992fa08') in 0.104316 seconds
+  Import took 0.106446 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/Asset Packs/SimpleFX/Prefabs/FX_DirtSplatter.prefab
+  artifactKey: Guid(834c99069a124aa439d5795c3579843b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Prefabs/FX_DirtSplatter.prefab using Guid(834c99069a124aa439d5795c3579843b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd9a2d0f83916cf4a78917787c797b0d') in 0.012026 seconds
+  Import took 0.014199 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000278 seconds.
+  path: Assets/Asset Packs/SimpleSky/_Materials/SimpleSky.mat
+  artifactKey: Guid(e68f77e240a7f8643b5cc4253dc37516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleSky/_Materials/SimpleSky.mat using Guid(e68f77e240a7f8643b5cc4253dc37516) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f401b658943a411ce0928862bf9a4bd') in 0.027652 seconds
+  Import took 0.029806 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000289 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Rickety_Dock_Platform_02.fbx
+  artifactKey: Guid(364d123304340994b8b50760844bb9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Models/SM_Bld_Rickety_Dock_Platform_02.fbx using Guid(364d123304340994b8b50760844bb9f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac082040eb2c0008a42bbc01fdeb4a1c') in 0.012517 seconds
+  Import took 0.014733 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000311 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Simple Arrow/Prefab/Simple Arrow.prefab
+  artifactKey: Guid(c7f49c6920d49ba468b083941d79f2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Simple Arrow/Prefab/Simple Arrow.prefab using Guid(c7f49c6920d49ba468b083941d79f2c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f6a8fb50a0f58f7386c9fdcf42424b87') in 0.020069 seconds
+  Import took 0.022540 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000249 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Simple Wooden Bench.prefab
+  artifactKey: Guid(b2dffffaa2688e947aedabb3af1e1cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Simple Wooden Bench.prefab using Guid(b2dffffaa2688e947aedabb3af1e1cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'afc841c15239259f37c07b65f0f9160a') in 0.060451 seconds
+  Import took 0.063034 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Asset Packs/SimpleSky/_Textures/Materials/SimpleSky.mat
+  artifactKey: Guid(9d909c3255ee7394aa6aa4a8ae1014ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleSky/_Textures/Materials/SimpleSky.mat using Guid(9d909c3255ee7394aa6aa4a8ae1014ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99ae3fc0186deb257b71b2685068f50f') in 0.009926 seconds
+  Import took 0.012148 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000190 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Buildings/SM_Bld_Rickety_Dock_Platform_02.prefab
+  artifactKey: Guid(5af47ec0ed24a954cbd9f00d841a6107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Synty Asset Packs - Commercial licence required/PolygonPirates/Prefabs/Buildings/SM_Bld_Rickety_Dock_Platform_02.prefab using Guid(5af47ec0ed24a954cbd9f00d841a6107) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4962f97fda768a90fcf218111e5958fd') in 0.010597 seconds
+  Import took 0.012959 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Asset Packs/SimpleFX/Models/FX_PoolSplash_03.fbx
+  artifactKey: Guid(104d9f0364dc5e8438f4350ff7e726dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Models/FX_PoolSplash_03.fbx using Guid(104d9f0364dc5e8438f4350ff7e726dd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '885493ae8c9b2bfd4d65dad87546cc26') in 0.010852 seconds
+  Import took 0.013156 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Asset Packs/SimpleFX/Prefabs/FX_BloodSplatter.prefab
+  artifactKey: Guid(8c27aeead6d968e4ba986702d6b84335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Prefabs/FX_BloodSplatter.prefab using Guid(8c27aeead6d968e4ba986702d6b84335) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af50df97fd8fbaf9813a2559c26559a') in 0.007494 seconds
+  Import took 0.009831 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Materials and Model/Simple Bow.png
+  artifactKey: Guid(829e6fcc12b43aa489f42177cc0bb52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Materials and Model/Simple Bow.png using Guid(829e6fcc12b43aa489f42177cc0bb52b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c18a14be5e6f7d82bdebd73aabe609d4') in 0.008120 seconds
+  Import took 0.010659 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Asset Packs/SimpleFX/Prefabs/FX_WaterSplatter.prefab
+  artifactKey: Guid(263867d4955e3644f9a1dfa779ab7d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Prefabs/FX_WaterSplatter.prefab using Guid(263867d4955e3644f9a1dfa779ab7d1e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e1e674953f458156dc3d151d185fcd4') in 0.006101 seconds
+  Import took 0.008441 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Materials and Model/Simple Bow.mat
+  artifactKey: Guid(e6969e6a3fc702b4ca4e7564bb1bdde7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Materials and Model/Simple Bow.mat using Guid(e6969e6a3fc702b4ca4e7564bb1bdde7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb918dfba8b1695b862075156914a1c1') in 0.008940 seconds
+  Import took 0.011121 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000277 seconds.
+  path: Assets/Game/Characters/Player/Player.prefab
+  artifactKey: Guid(00254deafec00df47a5cb22b82fa7df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game/Characters/Player/Player.prefab using Guid(00254deafec00df47a5cb22b82fa7df2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f889838ec975c192a9bf33a2b8e9335') in 0.111747 seconds
+  Import took 0.115165 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000232 seconds.
+  path: Assets/Asset Packs/SimpleFX/Prefabs/FX_Explosion_Rubble.prefab
+  artifactKey: Guid(079954accd64b32419ec069129c81273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Prefabs/FX_Explosion_Rubble.prefab using Guid(079954accd64b32419ec069129c81273) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ffa4c417fb9367f86728240d983479e') in 0.006617 seconds
+  Import took 0.008978 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Asset Packs/SimpleSky/_Textures/SimpleSky.png
+  artifactKey: Guid(7bab9ac1487e10c40b9ed77d4c551e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleSky/_Textures/SimpleSky.png using Guid(7bab9ac1487e10c40b9ed77d4c551e04) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0624c0f0040bbfa74b699962d54d6d7c') in 0.007853 seconds
+  Import took 0.010489 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000326 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Simple Wooden Cart.prefab
+  artifactKey: Guid(e1266e6eae510e046a1b6998f5d8f622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Simple Wooden Cart.prefab using Guid(e1266e6eae510e046a1b6998f5d8f622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c32465fd92bea327cde51bb409d2ba0') in 0.011762 seconds
+  Import took 0.014570 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000216 seconds.
+  path: Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Simple Wooden Bench.fbx
+  artifactKey: Guid(f07ae1230942a3940809956f47391a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/Not For Student Use - licence required/Environments - Misc other assets/Village/Components/Simple Wooden Bench.fbx using Guid(f07ae1230942a3940809956f47391a01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932c184895d561f4113ff5e55b187b4f') in 0.012476 seconds
+  Import took 0.014887 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000246 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Prefab/Simple Bow.prefab
+  artifactKey: Guid(7f105c0c272e6c146b4b41cdc53ea356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Prefab/Simple Bow.prefab using Guid(7f105c0c272e6c146b4b41cdc53ea356) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5e0f5ed107cd54aacfdfda346d0624d') in 0.008612 seconds
+  Import took 0.011400 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/Asset Packs/SimpleFX/Prefabs/FX_PoolSplash_01.prefab
+  artifactKey: Guid(ad879d352fd419047bdfc53b3d2a1961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Prefabs/FX_PoolSplash_01.prefab using Guid(ad879d352fd419047bdfc53b3d2a1961) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a1012098cd24459b804210683f56747') in 0.009954 seconds
+  Import took 0.012660 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000205 seconds.
+  path: Assets/Asset Packs/SimpleFX/Models/FX_PoolSplash_01.fbx
+  artifactKey: Guid(89f5c0aef85208c47827ce19d9767acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Models/FX_PoolSplash_01.fbx using Guid(89f5c0aef85208c47827ce19d9767acb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68a19be4761d24b64eeaee0e17831dc3') in 0.010728 seconds
+  Import took 0.013539 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Materials and Model/Simple Bow.fbx
+  artifactKey: Guid(4f18c80df16a4ae4194559bba2f3ab9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Simple Bow/Materials and Model/Simple Bow.fbx using Guid(4f18c80df16a4ae4194559bba2f3ab9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c522c809d643f5e5854e28051b5594db') in 0.011714 seconds
+  Import took 0.014335 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000291 seconds.
+  path: Assets/Asset Packs/SimpleFX/Prefabs/FX_WaterSplash.prefab
+  artifactKey: Guid(e49403f034d74ee44aa8a41b0ee4abfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Prefabs/FX_WaterSplash.prefab using Guid(e49403f034d74ee44aa8a41b0ee4abfd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0963421abdc6f2322441460fc588dff1') in 0.006724 seconds
+  Import took 0.009182 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000225 seconds.
+  path: Assets/Asset Packs/SimpleFX/Materials/FX_Splash.mat
+  artifactKey: Guid(1ee00051305bdb049b02c923f047227d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Materials/FX_Splash.mat using Guid(1ee00051305bdb049b02c923f047227d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fddb71c9389d10e2a45b98e57a7c8aa') in 0.009023 seconds
+  Import took 0.011711 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000259 seconds.
+  path: Assets/Asset Packs/SimpleFX/Prefabs/FX_PoolSplash_02.prefab
+  artifactKey: Guid(0d37f80e5a9508346b0ec65e1917e053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Prefabs/FX_PoolSplash_02.prefab using Guid(0d37f80e5a9508346b0ec65e1917e053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4e2f28f4c00b667275b191d2b968f73') in 0.008245 seconds
+  Import took 0.011030 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Asset Packs/SimpleFX/Prefabs/FX_PoolSplash_03.prefab
+  artifactKey: Guid(b147df4880cd0df449352ee652f14686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/SimpleFX/Prefabs/FX_PoolSplash_03.prefab using Guid(b147df4880cd0df449352ee652f14686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5939f2e870610f35169fac9eef2de62b') in 0.008113 seconds
+  Import took 0.010320 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
+  path: Assets/Asset Packs/GameDev.tv Assets/Simple Arrow/Materials & Meshes/Simple Arrow.fbx
+  artifactKey: Guid(07119b288adf12542aa4497154e38e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Asset Packs/GameDev.tv Assets/Simple Arrow/Materials & Meshes/Simple Arrow.fbx using Guid(07119b288adf12542aa4497154e38e05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e8262288fcca264b1fd3f624e2c7910') in 0.011491 seconds
+  Import took 0.013782 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 3.508358 seconds.
+  path: Assets/Scripts/Control/PlayerController.cs
+  artifactKey: Guid(7af77275bc4688847bc54d446c56e643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Control/PlayerController.cs using Guid(7af77275bc4688847bc54d446c56e643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2345127ba3cdc994c0bcf0e4186c37aa') in 0.080481 seconds
+  Import took 0.082815 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001403 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.45 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.749 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.75 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1593 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 89.7 MB.
+System memory in use after: 89.8 MB.
+
+Unloading 26 unused Assets to reduce memory usage. Loaded Objects now: 2095.
+Total: 1.850800 ms (FindLiveObjects: 0.216700 ms CreateObjectMapping: 0.084300 ms MarkObjects: 1.526000 ms  DeleteObjects: 0.022800 ms)
+
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

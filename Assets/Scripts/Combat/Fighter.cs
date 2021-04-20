@@ -1,11 +1,12 @@
-using GameDevTV.Utils;
-using RPG.Attributes;
-using RPG.Core;
+using UnityEngine;
 using RPG.Movement;
+using RPG.Core;
 using RPG.Saving;
+using RPG.Attributes;
 using RPG.Stats;
 using System.Collections.Generic;
-using UnityEngine;
+using GameDevTV.Utils;
+using System;
 
 namespace RPG.Combat
 {
@@ -21,8 +22,7 @@ namespace RPG.Combat
         WeaponConfig currentWeaponConfig;
         LazyValue<Weapon> currentWeapon;
 
-        private void Awake()
-        {
+        private void Awake() {
             currentWeaponConfig = defaultWeapon;
             currentWeapon = new LazyValue<Weapon>(SetupDefaultWeapon);
         }
@@ -32,7 +32,7 @@ namespace RPG.Combat
             return AttachWeapon(defaultWeapon);
         }
 
-        private void Start()
+        private void Start() 
         {
             currentWeapon.ForceInit();
         }
@@ -70,7 +70,7 @@ namespace RPG.Combat
         public Health GetTarget()
         {
             return target;
-        }
+        } 
 
         private void AttackBehaviour()
         {
@@ -92,7 +92,7 @@ namespace RPG.Combat
         // Animation Event
         void Hit()
         {
-            if (target == null) { return; }
+            if(target == null) { return; }
 
             float damage = GetComponent<BaseStats>().GetStat(Stat.Damage);
 
@@ -125,9 +125,9 @@ namespace RPG.Combat
         {
             if (combatTarget == null) { return false; }
             if (!GetComponent<Mover>().CanMoveTo(combatTarget.transform.position) &&
-                !GetIsInRange(combatTarget.transform))
+                !GetIsInRange(combatTarget.transform)) 
             {
-                return false;
+                return false; 
             }
             Health targetToTest = combatTarget.GetComponent<Health>();
             return targetToTest != null && !targetToTest.IsDead();
